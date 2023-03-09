@@ -3,7 +3,9 @@
     color: white;
 }
 
-table tr td{
+table{
+    border: 3px;
+    border-color: aliceblue;
     margin-left: auto;
     margin-right: auto;
 }
