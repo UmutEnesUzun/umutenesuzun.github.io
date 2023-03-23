@@ -33,18 +33,12 @@ footer{
 }
 
 .mainBar{
-    white-space: nowrap;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
-.mainBar a#menu{
-    margin-left:0;
-    margin-right: 46%;
-}
-.mainBar a#home{
-    margin-right: 0;
-    margin-left: 46%;
-}
+
 
 .social{
     padding-top: 10px;
