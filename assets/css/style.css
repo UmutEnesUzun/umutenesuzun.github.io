@@ -47,17 +47,21 @@ footer{
 
 
 .social{
+    display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
-    text-align: center;
+    align-items: center;
     background-color: rgb(21, 21, 21);
+    justify-content: center;
 }
 .social a{
     padding-left: 8px;
     padding-right: 8px;
 }
 .contacts{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 7%;
 }
 a{
