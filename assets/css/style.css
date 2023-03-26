@@ -21,14 +21,27 @@ img {
   }
 
 section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     font-size: xx-large;
-    padding-top: 40%;
     color: black;
     text-align: center;
     align-items: center;
     height: 600px;
     background-color: wheat;
 }
+
+#projects_section{
+    display: flex;
+    height: fit-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    align-items: left;
+    text-align: left;
+}
+
 
 footer{
     height: 50px;
@@ -101,6 +114,64 @@ footer{
     background-color: rgb(21, 21, 21);
     justify-content: center;
 }
+.projects{
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 70px;
+    height: 300px;
+    width: 500px;
+    border: 3px solid chocolate;
+    border-radius: 5px;
+}
+
+.projects div{
+    font-size: medium;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 3px solid chocolate;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 40%;
+    height: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+.projects #left{
+    margin-right: 0px;
+    text-align: center;
+    flex-grow: 0;
+    width: 40%;
+}
+
+.projects .div_header{
+    font-size: xx-large;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 454px;
+    height: 10%;
+    margin-bottom: 5%;
+}
+
+.projects .break{
+    border: none;
+    flex-basis: 100%;
+    height: 0;
+    margin: 0%;
+  }
+
+.space{
+    width: 10%;
+    display: flex;
+    flex-grow: 1;
+  }
 .social a{
     padding-left: 8px;
     padding-right: 8px;
