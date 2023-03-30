@@ -21,6 +21,7 @@ img {
   }
 
 section{
+    padding: 5%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -95,6 +96,27 @@ footer{
     background: none;
     cursor: pointer;
     border: none;
+  }
+
+  #skillList{
+    width: 0;
+    height: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  #skillSearch{
+    display: flex;
+    margin-left: 45%;
+    flex-direction: column;
+  }
+
+  #ti{
+    font-size: medium;
+  }
+
+  #skillSearch div{
+    margin-bottom: 15px;
   }
 
   #main {

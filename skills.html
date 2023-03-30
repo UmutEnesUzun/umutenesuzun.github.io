@@ -1,16 +1,6 @@
 <html>
     <head>
-        <script>
-            function openNav() {
-              document.getElementById("mySidebar").style.width = "250px";
-              document.getElementById("main").style.marginLeft = "250px";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidebar").style.width = "0";
-              document.getElementById("main").style.marginLeft= "0";
-            }
-            </script>
+        <script src="assets/scripts/script.js"></script>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
@@ -34,7 +24,36 @@
         <div class="centered" style="font-size: 100px;">Beceriler</div>  
         </header>
         
-        <section>
+        <section id="skillSection">
+        <div>
+            <button id="list" onclick="listSkills(this)">Listele</button>
+        </div>
+
+        <div id="skillList">
+            <ul>
+                <li>C</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>Javascript</li>
+                <li>Git</li>
+            </ul>
+        </div>
+         
+        <div id = "skillSearch">
+            <div>
+                <p id="ti">Bir Kod Dili Girin. <br> Yeşil Yanarsa Biliyorum, Kırmızı Yanarsa Bilmiyorum</p></div>
+
+            <div>
+            <input type="text" id="searchInput"></div>
+
+            <div>
+            <button id="check" onclick="checkSkills()">Kontrol Et</button></div>
+            
+        </div>
+        
+  
             
         </section>
 
