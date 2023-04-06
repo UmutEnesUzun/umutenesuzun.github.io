@@ -138,6 +138,42 @@ footer{
     background-color: rgb(21, 21, 21);
     justify-content: center;
 }
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: white;
+  color: black;
+}
+
+.fa-steam {
+  background: #1b2838;
+  color: white;
+}
+
+.fa-discord {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #000000;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
+
 .projects{
     flex-wrap: wrap;
     flex-direction: row;
