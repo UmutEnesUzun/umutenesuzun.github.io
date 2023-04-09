@@ -120,7 +120,7 @@ footer{
   }
 
   #main {
-    transition: margin-left .5s; /* If you want a transition effect */
+    transition: margin-left .5s;
     padding: 20px;
   }
   
@@ -248,6 +248,95 @@ command{
   opacity: 0.5;
 } */}
 
+.pad figure {
+	margin: 0;
+	position: relative;
+}
+
+.pad figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.pad figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-right: 10px;
+  padding-left: 10px;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.pad figcaption h3 {
+	margin-bottom: 5px;
+	padding: 0;
+	color: #fff;
+}
+
+
+.cs-style-4 figure {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.cs-style-4 figure > div {
+	overflow: hidden;
+}
+
+.cs-style-4 figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-4 figure:hover img,
+.cs-style-4 figure.cs-hover img {
+	-webkit-transform: translateX(25%);
+	-moz-transform: translateX(25%);
+	-ms-transform: translateX(25%);
+	transform: translateX(25%);
+}
+
+.cs-style-4 figcaption {
+	height: 100%;
+	width: 50%;
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-4 figure:hover figcaption,
+.cs-style-4 figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-4 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+
 .projects{
     flex-wrap: wrap;
     flex-direction: row;
@@ -316,7 +405,9 @@ command{
 a{
     text-decoration: none;
 }
-.contacts span#pad{
-    padding-right: 40%;
+.contacts span.pad{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 5%;
 }
 
