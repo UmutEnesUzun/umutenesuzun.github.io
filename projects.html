@@ -22,14 +22,15 @@
                 <img border="0" alt="MENU" src="assets/images/menu.png" width="50" height="50">
             </button>  
             <a href="/index.html" id="home">
-                <img border="0" alt="HOME" src="assets/images/home.png" width="50" height="50">
+                <button class="btn btn-1 btn-1e">Ana Sayfa</button>
+                       <!-- <img border="0" alt="HOME" src="assets/images/home.png" width="50" height="50"> -->
             </a>
     </div>
 
     <div class="centered" style="font-size: 100px;">Projelerim</div>
         </header>
 
-        <section id="projects_section">
+        <section class="projects_grid effect-8" id="projects_section">
             <div class="projects">
                 <div class="div_header">
                     <a href="https://github.com/TheCrks/Online-TowerDefense/" target="_blank"> Online TowerDefense Oyunu</a>
@@ -106,7 +107,7 @@
                         <li>Başlığa tıklayarak proje dosyalarına erişebilirsiniz</li>
                       </ul> 
                 </div>
-            </div>
+            </div> 
         </section>
 
         <footer>
@@ -142,9 +143,16 @@
     </span>
         </div>
     </footer> 
-        </footer>
+    <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+            minDuration : 0.4,
+            maxDuration : 0.6,
+            viewportFactor : 0.2
+        } );
+    </script>
+
      </body>
 
-
+     
 
 </html>
