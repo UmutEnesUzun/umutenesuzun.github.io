@@ -478,3 +478,13 @@ a{
 }
 
 
+
+#fruit{
+  position: fixed;
+  left: 35%;
+  top: 10%;
+}
+
+#fruit img{
+ position: fixed;
+}
