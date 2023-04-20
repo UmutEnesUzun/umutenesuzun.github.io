@@ -27,14 +27,11 @@ function crt() {
             img.style.right = pos+"%";
             img.id = id;
             var hg = 0;
-            console.log(id);
             var getID = id;
             fruits[id] = setInterval(function(){
                 var x = getID;
-                console.log(getID);
                 img.style.top = hg+"px";
                 if(hg >= 650){
-                    console.log("hg");
                     clearInterval(fruits[x]);
                 }
                 hg += 1;
@@ -45,10 +42,29 @@ function crt() {
         bool = true;
         }
        else{
-        console.log("clear");
         clearInterval(inter);
         bool = false;
        } 
+
+       var body = document.getElementById("gameBody");
+
+       body.addEventListener("keydown", (e) => {
+        
+        if (!e.repeat) {
+            var key = e.key;
+          if(key == "ArrowRight"){
+            console.log(`Key "${e.key}" pressed [event: keydown]`);
+            var basket = document.getElementById("basket");
+            var left = alert(basket.style.left);
+            console.log(left);
+            left+=5;
+            console.log(left);
+            basket.style.left = left+"%";
+          }
+        } else {
+          console.log(`Key "${e.key}" repeating [event: keydown]`);
+        }
+      });
     }
 
 
