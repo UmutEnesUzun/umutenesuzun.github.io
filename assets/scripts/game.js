@@ -4,6 +4,11 @@ var inter;
 var fruits = [];
 
 var id = 0;
+
+function getCssProperty(elmId, property){
+  var elem = document.getElementById(elmId);
+  return window.getComputedStyle(elem,null).getPropertyValue(property);
+}
 function crt() {
        if(!bool){
        inter = setInterval(function() {
@@ -55,12 +60,31 @@ function crt() {
           if(key == "ArrowRight"){
             console.log(`Key "${e.key}" pressed [event: keydown]`);
             var basket = document.getElementById("basket");
-            var left = alert(basket.style.left);
+            var left = getCssProperty("basket", "left");
             console.log(left);
-            left+=5;
-            console.log(left);
-            basket.style.left = left+"%";
+            var l = left.replace('px',''); 
+            console.log(l);
+            l = parseInt(l);
+            console.log(l);
+            l+=100;
+            console.log(l);
+            basket.style.left = l+"px";
           }
+
+          if(key == "ArrowLeft"){
+            console.log(`Key "${e.key}" pressed [event: keydown]`);
+            var basket = document.getElementById("basket");
+            var left = getCssProperty("basket", "left");
+            console.log(left);
+            var l = left.replace('px',''); 
+            console.log(l);
+            l = parseInt(l);
+            console.log(l);
+            l-=100;
+            console.log(l);
+            basket.style.left = l+"px";
+          }
+
         } else {
           console.log(`Key "${e.key}" repeating [event: keydown]`);
         }
